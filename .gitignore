@@ -1,0 +1,4 @@
+# Binarios y objetos
+bin/
+build/
+*.o
