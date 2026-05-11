@@ -1,6 +1,8 @@
 
 CXX = g++
 CXXFLAGS = -O3 -Wall -Iinclude -std=c++17
+CXXFLAGS = -O3 -Wall -Iinclude `pkg-config --cflags rtaudio rtmidi`
+LIBS = `pkg-config --libs rtaudio rtmidi` -lpthread
 LIBS = -lrtmidi -lrtaudio -lpthread -lasound
 
 SRC_DIR = src
